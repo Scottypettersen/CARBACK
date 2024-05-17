@@ -1,0 +1,70 @@
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif; /* A modern, clean font (replace with your preference) */
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(to right, #007BFF, #0056b3); /* Gradient background */
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+/* List Styling */
+ol {
+    list-style-type: none; /* Remove default bullets */
+    counter-reset: item;   /* Set up a counter for numbering */
+    padding-left: 0;
+}
+
+ol li {
+    counter-increment: item;
+    margin-bottom: 10px;
+}
+
+ol li::before {
+    content: counter(item) "."; /* Add number before each item */
+    display: inline-block;
+    width: 25px;
+    margin-right: 10px;
+}
+
+/* Button Styling */
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px; /* Rounded corners */
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Add hover effect */
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
